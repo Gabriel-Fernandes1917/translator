@@ -1,25 +1,47 @@
 
 function research(){
-    var palavra = document.querySelector("#input");
-    var textinho = palavra.Value;
+    var x = document.getElementById('input').value;
+  
+    var word = x.toUpperCase();  // toUpperCase() deixa tudo maiusculo.
+    alert(word);
 
-    alert(textinho);
-    console.log(textinho);
-    if(textinho == "var" || "let"){
-        Var();
+    if(word == "VAR"){
+
+        document.querySelector('#output').innerHTML = "&nbsp;";
+        document.querySelector('#output').innerText = '>int nome = valor; para numeros inteiros <\n> float nome = valor; para numeros nao inteiros <\n> char[quantidade] nome = caracteres; para caracteres <\n> string nome = string; para string';
 
     }else
-    if(textinho == "document.write" || "write"){
-        Write();
-    }else{
+    if(word == "LET"){
+
+        document.querySelector('#output').innerHTML = "&nbsp;";
+        document.querySelector('#output').innerText = '>int nome = valor; para numeros inteiros <\n> float nome = valor; para numeros nao inteiros <\n> char[quantidade] nome = caracteres; para caracteres <\n> string nome = string; para string';
+
+    }else
+    if(word == "DOCUMENT.WRITE"){
+        
+        document.querySelector('#output').innerHTML = "&nbsp;";
+        document.querySelector('#output').innerText = '> cout::std << "seu texto"; < \n > cout::std << "seu text" << endl; para quebrar linha apos o texto <';
+    
+    }else
+    if(word == "WRITE"){
+        
+        document.querySelector('#output').innerHTML = "&nbsp;";
+        document.querySelector('#output').innerText = '> cout::std << "seu texto"; < \n > cout::std << "seu text" << endl; para quebrar linha apos o texto <';
+    
+    }
+    else{
+        document.querySelector('#output').innerHTML = "&nbsp;";
         document.querySelector('#output').innerText = 'Sem resposta';
     }
     
 
+    
+   
+
 }
 
 
-
+/*
 
 function Var(){
 
@@ -39,6 +61,5 @@ function Write(){
 
     var inpu = document.getElementById('input').Value;
 
-    document.querySelector('#output').innerText = '> cout::std << "seu texto"; < \n > cout::std << "seu text" << endl; para quebrar linha apos o texto <';
 
-}
+}*/
