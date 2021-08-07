@@ -1,19 +1,61 @@
 *{
     margin: 0;
     text-decoration: none;
+    
+}
+
+button{
+    margin: 50px;
+}
+
+.languages{
+    display: flex;
+    text-align: center;
+    
+}
+
+.languages > h2{
+    margin-left: 90px;
 }
 
 .infos{
     display: flex;
 }
 
-#output{
-    
-    
-    
+
+
+#input{
+     
+    min-width: 165px;
+    min-height: 100px;
+    border-style: dashed;
+    border: black;
+    margin-left: 30px;
+    display: flex;
+    border-style: solid;
+    align-items: center;
 }
 
-#output output{
+.output{
+    
+    min-width: 165px;
+    min-height: 100px;
+    border-style: dashed;
+    border: black;
+    margin-left: 30px;
+    display: flex;
+    border-style: solid;
+    align-items: center;
+}
 
+.resul{
+    
+    display: flex;
+    min-width: 164px;
+    min-height: 99px;
+    border-style: solid;
+    border: black;
+    align-items: center;
+    padding: 5px;
     
 }
